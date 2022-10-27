@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Cambio</title>
+    <link rel="stylesheet" href="/css/estiloExamen2.css">
+</head>
+<body>
+    
+    <div class="encabezado">
+        <header>
+            <h1>Casa de cambio Cash-Dólar</h1>
+        </header>
+    </div>
+
+    <div class="contenido">
+        <div class="inputs">
+            <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+
+            <select name="monedaOrigen" id="monedaOrigen">
+                <option value="">-- Moneda Origen --</option>
+                <option value="mxn">Peso Mexicano</option>
+                <option value="da">Dólar Americano</option>
+                <option value="dc">Dólar Canadiense</option>
+                <option value="eur">Euro</option>
+            </select>
+
+            <select name="monedaDestino" id="monedaDestino">
+                <option value="">-- Moneda Destino --</option>
+                <option value="mxn">Peso Mexicano</option>
+                <option value="da">Dolár Americano</option>
+                <option value="dc">Dólar Canadiense</option>
+                <option value="eur">Euro</option>
+            </select>
+
+            <input type="text" name="subtotal" id="subtotal" readonly placeholder="Subtotal">
+            <input type="text" name="totalComision" id="totalComision" readonly placeholder="Total comisión">
+            <input type="text" name="totalPagar" id="totalPagar" readonly placeholder="Total a pagar">
+            <button onclick="calcular()">
+                Calcular
+            </button>
+            <button onclick="registro()">
+                Registro
+            </button>
+        </div>
+
+        <div class="contenedor-registros">
+            <h2>Registros realizados</h2>
+            <br>
+            <div class="Registros">
+                <label for="" id="lblCantidad" name="lblCantidad"></label>
+                <label for="" id="lblMonedaOrigen" name="lblMonedaOrigen"></label>
+                <label for="" id="lblMonedaDestino" name="lblMonedaDestino"></label>
+                <label for="" id="lblSubtotal" name="lblSubtotal"></label>
+                <label for="" id="lblTotalComision" name="lblTotalComision"></label>
+                <label for="" id="lblTotalPagar" name="lblTotalPagar"></label>
+            </div>
+        </div>
+        <hr>
+        <div class="resultados">
+            <button onclick="borrarRegistros()">Borrar registros</button>
+            <label for="">TOTAL GENERAL</label>
+            <label for="" id="registroSubtotal" name="registroSubtotal">$$$$</label>
+            <label for="" id="registroTotalComision" name="registroTotalComision">$$$$</label>
+            <label for="" id="registroTotalPagar" name="registroTotalPagar">$$$$</label>
+        </div>
+
+    </div>
+
+    <div class="pie">
+        <footer>
+            <h1>Pedro Sanchez</h1>
+        </footer>
+    </div>
+    
+</body>
+</html>

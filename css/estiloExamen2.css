@@ -1,0 +1,65 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.encabezado{
+    padding: 20px;
+    display: flex;
+    height: 10%;
+    background-color: chartreuse;
+}
+
+.contenido{
+    width: 100%;
+    background-color: burlywood;
+}
+
+.inputs{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    height: 10%;
+}
+
+.contenedor-registros{
+    flex-flow: row wrap;
+    padding: 10px;
+    height: 35%;
+}
+
+.contenedor-registros h2{
+    text-align: center;
+}
+
+.Registros{
+    display: flex;
+    background-color: antiquewhite;
+    padding: 3%;
+}
+
+.resultados{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    height: 35%;
+}
+
+.pie{
+    padding: 20px;
+    display: flex;
+    height: 10%;
+    background-color: crimson;
+}
+
+@media screen and (max-width:700px){
+    .parte1{
+        display: flex;
+        flex-flow: column wrap;
+    }   
+    .parte2{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
