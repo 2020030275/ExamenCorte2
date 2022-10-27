@@ -202,9 +202,9 @@ function calcular(){
         total = total * 1.35
     }
 
-    let subtotal = total
-    let totalCom = subtotal * 0.03
-    let totalPagar = (subtotal - totalCom)
+    let subtotal = total.toFixed(2)
+    let totalCom = (subtotal * 0.03).toFixed(2)
+    let totalPagar = (subtotal - totalCom).toFixed(2)
 
     let subTexto = document.getElementById('subtotal')
     let tComTexto = document.getElementById('totalComision')
@@ -267,7 +267,7 @@ function calculo(){
     }
 
     let subtotal = total
-    let totalCom = subtotal * 0.03
+    let totalCom = (subtotal * 0.03)
     let totalPagar = (subtotal - totalCom)
 
     let resultados = [ subtotal, totalCom, totalPagar]
@@ -337,19 +337,55 @@ function registro(){
     let regTotalComision = document.getElementById('registroTotalComision');
     let regTotalPagar = document.getElementById('registroTotalPagar');
 
-    subtotalF = subtotalF + subtotal;
+    subtotalF = (subtotalF + subtotal)
 
     regSubtotal.innerText = ""
     regSubtotal.innerText = regSubtotal.innerText + subtotalF;
 
-    totalComisionF = totalComisionF + totalCom;
+    totalComisionF = (totalComisionF + totalCom)
 
     regTotalComision.innerText = ""
     regTotalComision.innerText = regTotalComision.innerText + totalComisionF;
 
-    totalPagarF = totalPagarF + totalPagar;
+    totalPagarF = (totalPagarF + totalPagar)
 
     regTotalPagar.innerText = ""
     regTotalPagar.innerText = regTotalPagar.innerText + totalPagarF;
 
 }
+
+
+function borrarRegistros(){
+
+    let lblCantidad = document.getElementById('lblCantidad');
+    let lblMonedaOrigen = document.getElementById('lblMonedaOrigen');
+    let lblMonedaDestino = document.getElementById('lblMonedaDestino');
+    let lblSubtotal = document.getElementById('lblSubtotal');
+    let lblTotalComision = document.getElementById('lblTotalComision');
+    let lblTotalPagar = document.getElementById('lblTotalPagar');
+
+    lblCantidad.innerHTML = ""
+    lblMonedaOrigen.innerHTML = ""
+    lblMonedaDestino.innerHTML = ""
+    lblSubtotal.innerHTML = ""
+    lblTotalComision.innerHTML = ""
+    lblTotalPagar.innerHTML = ""
+
+    let regSubtotal = document.getElementById('registroSubtotal');
+    let regTotalComision = document.getElementById('registroTotalComision');
+    let regTotalPagar = document.getElementById('registroTotalPagar');
+
+
+    regSubtotal.innerText = "$$$$"
+    subtotalF = 0;
+
+    regTotalComision.innerText = "$$$$"
+    totalComisionF = 0;
+
+    regTotalPagar.innerText = "$$$$"
+    totalPagarF = 0;
+
+
+
+}
+
