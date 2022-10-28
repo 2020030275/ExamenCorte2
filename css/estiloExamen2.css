@@ -1,6 +1,7 @@
 *{
     margin: 0 auto;
     padding: 0 auto;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .encabezado{
@@ -34,7 +35,7 @@
 
 .Registros{
     display: flex;
-    background-color: antiquewhite;
+    background-color: cadetblue;
     padding: 3%;
 }
 

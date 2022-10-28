@@ -293,12 +293,12 @@ function registro(){
 
 
 
-    let lblCantidad = document.getElementById('lblCantidad');
-    let lblMonedaOrigen = document.getElementById('lblMonedaOrigen');
-    let lblMonedaDestino = document.getElementById('lblMonedaDestino');
-    let lblSubtotal = document.getElementById('lblSubtotal');
-    let lblTotalComision = document.getElementById('lblTotalComision');
-    let lblTotalPagar = document.getElementById('lblTotalPagar');
+    let lblCantidad = document.getElementById('lblCantidad')
+    let lblMonedaOrigen = document.getElementById('lblMonedaOrigen')
+    let lblMonedaDestino = document.getElementById('lblMonedaDestino')
+    let lblSubtotal = document.getElementById('lblSubtotal')
+    let lblTotalComision = document.getElementById('lblTotalComision')
+    let lblTotalPagar = document.getElementById('lblTotalPagar')
 
 
     if (monedaOrigen == 'mxn') {
@@ -308,7 +308,7 @@ function registro(){
     }else if (monedaOrigen == 'dc') {
         monedaOrigenT = "Dólar canadiense";
     }else if (monedaOrigen == 'eur') {
-        monedaOrigenT = "Euro";
+        monedaOrigenT = "Euro"
     }
 
 
@@ -319,50 +319,50 @@ function registro(){
     }else if (monedaDestino == 'dc') {
         monedaDestinoT = "Dólar canadiense";
     }else if (monedaDestino == 'eur') {
-        monedaDestinoT = "Euro";
+        monedaDestinoT = "Euro"
     }
 
 
     // Reemplazo
-    lblCantidad.innerHTML = lblCantidad.innerHTML + cantidad + "<br>";
-    lblMonedaOrigen.innerHTML = lblMonedaOrigen.innerHTML + monedaOrigenT + "<br>";
-    lblMonedaDestino.innerHTML = lblMonedaDestino.innerHTML + monedaDestinoT + "<br>";
-    lblSubtotal.innerHTML = lblSubtotal.innerHTML + subtotal + "<br>";
-    lblTotalComision.innerHTML = lblTotalComision.innerHTML + totalCom + "<br>";
-    lblTotalPagar.innerHTML = lblTotalPagar.innerHTML + totalPagar + "<br>";
+    lblCantidad.innerHTML = lblCantidad.innerHTML + cantidad + "<br>"
+    lblMonedaOrigen.innerHTML = lblMonedaOrigen.innerHTML + monedaOrigenT + "<br>"
+    lblMonedaDestino.innerHTML = lblMonedaDestino.innerHTML + monedaDestinoT + "<br>"
+    lblSubtotal.innerHTML = lblSubtotal.innerHTML + subtotal + "<br>"
+    lblTotalComision.innerHTML = lblTotalComision.innerHTML + totalCom + "<br>"
+    lblTotalPagar.innerHTML = lblTotalPagar.innerHTML + totalPagar + "<br>"
 
 
     // Suma registros
-    let regSubtotal = document.getElementById('registroSubtotal');
-    let regTotalComision = document.getElementById('registroTotalComision');
-    let regTotalPagar = document.getElementById('registroTotalPagar');
+    let regSubtotal = document.getElementById('registroSubtotal')
+    let regTotalComision = document.getElementById('registroTotalComision')
+    let regTotalPagar = document.getElementById('registroTotalPagar')
 
     subtotalF = (subtotalF + subtotal)
 
     regSubtotal.innerText = ""
-    regSubtotal.innerText = regSubtotal.innerText + subtotalF;
+    regSubtotal.innerText = regSubtotal.innerText + subtotalF
 
     totalComisionF = (totalComisionF + totalCom)
 
     regTotalComision.innerText = ""
-    regTotalComision.innerText = regTotalComision.innerText + totalComisionF;
+    regTotalComision.innerText = regTotalComision.innerText + totalComisionF
 
     totalPagarF = (totalPagarF + totalPagar)
 
     regTotalPagar.innerText = ""
-    regTotalPagar.innerText = regTotalPagar.innerText + totalPagarF;
+    regTotalPagar.innerText = regTotalPagar.innerText + totalPagarF
 
 }
 
 
 function borrarRegistros(){
 
-    let lblCantidad = document.getElementById('lblCantidad');
-    let lblMonedaOrigen = document.getElementById('lblMonedaOrigen');
-    let lblMonedaDestino = document.getElementById('lblMonedaDestino');
-    let lblSubtotal = document.getElementById('lblSubtotal');
-    let lblTotalComision = document.getElementById('lblTotalComision');
-    let lblTotalPagar = document.getElementById('lblTotalPagar');
+    let lblCantidad = document.getElementById('lblCantidad')
+    let lblMonedaOrigen = document.getElementById('lblMonedaOrigen')
+    let lblMonedaDestino = document.getElementById('lblMonedaDestino')
+    let lblSubtotal = document.getElementById('lblSubtotal')
+    let lblTotalComision = document.getElementById('lblTotalComision')
+    let lblTotalPagar = document.getElementById('lblTotalPagar')
 
     lblCantidad.innerHTML = ""
     lblMonedaOrigen.innerHTML = ""
@@ -371,19 +371,19 @@ function borrarRegistros(){
     lblTotalComision.innerHTML = ""
     lblTotalPagar.innerHTML = ""
 
-    let regSubtotal = document.getElementById('registroSubtotal');
-    let regTotalComision = document.getElementById('registroTotalComision');
-    let regTotalPagar = document.getElementById('registroTotalPagar');
+    let regSubtotal = document.getElementById('registroSubtotal')
+    let regTotalComision = document.getElementById('registroTotalComision')
+    let regTotalPagar = document.getElementById('registroTotalPagar')
 
 
     regSubtotal.innerText = "$$$$"
-    subtotalF = 0;
+    subtotalF = 0
 
     regTotalComision.innerText = "$$$$"
-    totalComisionF = 0;
+    totalComisionF = 0
 
     regTotalPagar.innerText = "$$$$"
-    totalPagarF = 0;
+    totalPagarF = 0
 
 
 
